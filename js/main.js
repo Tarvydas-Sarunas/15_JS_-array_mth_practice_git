@@ -36,6 +36,9 @@ console.log("onlyPositivsArr ===", onlyPositivsArr);
 // Atrinkti kas penktą elementą
 
 // panaudoti filter
-const kasPenktas = m;
 // viduje mes tikriname ar index yra 5 kartotinis (idx % 5 === 0)
+const kasPenktas = mainArr.filter((sk, idx) => idx % 5 === 0);
 // jei yra tai atrenkame jei ne praleidziame
+console.log("kasPenktas ===", kasPenktas);
+
+// Sukurti funkciją, kuri ima masyvą ir atspausdina kiek- vieną jo reikšmę atskirai: [0] => 2. [1] => 12. [2] => 33. (nieko negrąžina)
