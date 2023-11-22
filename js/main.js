@@ -18,3 +18,24 @@ console.log("kvadratu ===", kvadratuArr);
 // Atrinkti tiktai lyginių skaičių masyvą
 const lyginiai = mainArr.filter((sk) => sk % 2 === 0);
 console.log("lyginiai ===", lyginiai);
+
+// Visas neigiamas vertes masyve padaryti teigiamomis
+
+const onlyPositivsArr = mainArr.map((sk) => {
+  // kiekviena reiksme tikrinti ar maziau uz 0
+  if (sk < 0) {
+    // jei taip tai * -1 kad butu pliusinis
+    let kint = sk * -1;
+    // grazinti reiksme
+    return kint;
+  } // ir grazinti likusius skaicius kurie jau teigiami
+  return sk;
+});
+console.log("onlyPositivsArr ===", onlyPositivsArr);
+
+// Atrinkti kas penktą elementą
+
+// panaudoti filter
+const kasPenktas = m;
+// viduje mes tikriname ar index yra 5 kartotinis (idx % 5 === 0)
+// jei yra tai atrenkame jei ne praleidziame
