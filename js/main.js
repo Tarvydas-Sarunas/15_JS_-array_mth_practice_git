@@ -42,3 +42,13 @@ const kasPenktas = mainArr.filter((sk, idx) => idx % 5 === 0);
 console.log("kasPenktas ===", kasPenktas);
 
 // Sukurti funkciją, kuri ima masyvą ir atspausdina kiek- vieną jo reikšmę atskirai: [0] => 2. [1] => 12. [2] => 33. (nieko negrąžina)
+
+/**
+ *
+ * @param {number[]} arr
+ */
+function printArray(arr) {
+  arr.forEach((sk, idx) => {
+    //
+  });
+}
